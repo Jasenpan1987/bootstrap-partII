@@ -102,3 +102,10 @@ body {
   transform: translateY(-2px);
 }
 /* cards ends  */
+
+/* task list start */
+.task-border {
+  border-left: 3px solid #f66436;
+}
+
+/* task list ends  */
