@@ -40,4 +40,53 @@ body {
   box-shadow: 2px 5px 20px #111;
   transform: translateY(-2px);
 }
+
+.search-input {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #999;
+  transition: all 0.4s ease;
+}
+
+.search-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #dc3545;
+}
+
+.search-button {
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.search-button:hover {
+  background-color: #eee;
+  transform: translateY(-2px);
+}
+
+.icon-parent {
+  position: relative;
+}
+
+.icon-parent::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  height: 12px;
+  width: 12px;
+  background-color: #f44336;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .top-navbar {
+    position: static;
+  }
+}
 /* navbar ends */
